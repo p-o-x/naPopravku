@@ -21,15 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://0.0.0.0:80/api/auth/register",
+					"raw": "http://84.38.183.114/api/auth/register",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"auth",
@@ -60,15 +59,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80/api/auth/register",
+							"raw": "http://84.38.183.114/api/auth/register",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"auth",
@@ -98,15 +96,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://0.0.0.0:80/api/auth/login",
+					"raw": "http://84.38.183.114/api/auth/login",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"auth",
@@ -137,15 +134,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80/api/auth/login",
+							"raw": "http://84.38.183.114/api/auth/login",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"auth",
@@ -168,7 +164,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -176,15 +172,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/test_folder",
+					"raw": "http://84.38.183.114/api/fileserver/test_folder",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -199,15 +194,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/",
+							"raw": "http://84.38.183.114/api/fileserver/",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -226,15 +220,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/test_folder",
+							"raw": "http://84.38.183.114/api/fileserver/test_folder",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -257,7 +250,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -265,15 +258,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+					"raw": "http://84.38.183.114/api/fileserver/test_folder/test.txt",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -289,15 +281,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"raw": "http://84.38.183.114/api/fileserver/test_folder/test.txt",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -321,7 +312,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -329,15 +320,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/pi",
+					"raw": "http://84.38.183.114/api/fileserver/pi",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -352,15 +342,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"raw": "http://84.38.183.114/api/fileserver/test_folder/test.txt",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -384,7 +373,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -401,15 +390,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+					"raw": "http://84.38.183.114/api/fileserver/test_folder/test.txt",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -441,15 +429,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"raw": "http://84.38.183.114/api/fileserver/test_folder/test.txt",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -473,7 +460,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -486,20 +473,19 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "test_upload.txt"
+							"src": "test_upload.php"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/",
+					"raw": "http://84.38.183.114/api/fileserver/test_folder/",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -537,15 +523,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/",
+							"raw": "http://84.38.183.114/api/fileserver/test_folder/",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"api",
 								"fileserver",
@@ -569,7 +554,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -577,15 +562,14 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:80/api/fileserver/test_folder2/",
+					"raw": "http://84.38.183.114/api/fileserver/test_folder2/",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"fileserver",
@@ -598,7 +582,7 @@
 				{
 					"name": "create folder",
 					"originalRequest": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -617,15 +601,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80//api/generateurl/test_folder/",
+							"raw": "http://84.38.183.114//api/generateurl/test_folder/",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"",
 								"api",
@@ -650,7 +633,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
 							"type": "string"
 						}
 					]
@@ -658,15 +641,14 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:80/api/generateurl/test_folder/test.txt",
+					"raw": "http://84.38.183.114/api/generateurl/test_folder/test.txt",
 					"protocol": "http",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"84",
+						"38",
+						"183",
+						"114"
 					],
-					"port": "80",
 					"path": [
 						"api",
 						"generateurl",
@@ -679,7 +661,7 @@
 				{
 					"name": "generate public url",
 					"originalRequest": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -698,15 +680,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:80//api/generateurl/test_folder/",
+							"raw": "http://84.38.183.114//api/generateurl/test_folder/",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"84",
+								"38",
+								"183",
+								"114"
 							],
-							"port": "80",
 							"path": [
 								"",
 								"api",
@@ -720,6 +701,80 @@
 					"header": null,
 					"cookie": [],
 					"body": "{\n    \"url\": \"http://0.0.0.0/api/storage/APQFVi5svSG.txt\"\n}"
+				}
+			]
+		},
+		{
+			"name": "user info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|Wv1IeE2zbl6nDPwwwqjsV6MwmOjrwH3TkSKbAT6L",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://84.38.183.114/api/user",
+					"protocol": "http",
+					"host": [
+						"84",
+						"38",
+						"183",
+						"114"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generate public url",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"new_name\": \"test_rename.txt\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://84.38.183.114/api/user",
+							"protocol": "http",
+							"host": [
+								"84",
+								"38",
+								"183",
+								"114"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Dima\",\n    \"email\": \"test@test.ru\",\n    \"registration_date\": \"2022-11-29\",\n    \"email_verified_at\": null,\n    \"created_at\": \"2022-11-29T20:16:00.000000Z\",\n    \"updated_at\": \"2022-11-29T20:16:00.000000Z\"\n}"
 				}
 			]
 		}

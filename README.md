@@ -14,4 +14,11 @@
 - cat .env.example > .env
 - docker run --rm --interactive --tty -v $(pwd):/app composer install
 - ./vendor/bin/sail up -d
-- ./vendor/bin/sail up artisan migrate
+Если запустить миграции до того как mysql инициализирует базу,
+то может выдать ошибку,значит нужно попробовать через 30 секунд ещё раз
+- ./vendor/bin/sail artisan migrate
+- cd ..
+- chmod 777 naPopravku -R
+
+Сервис запущен по адресу http://84.38.183.114
+в коллекции postman примеры запросов к сервису
