@@ -13,7 +13,7 @@ use Illuminate\Http\JsonResponse;
 class AuthController extends Controller
 {
     /**
-     * Создание пользователяphp get domain from url
+     * Создание пользователя
      * @param Request $request
      *
      * @return JsonResponse

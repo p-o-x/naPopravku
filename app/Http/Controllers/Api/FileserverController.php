@@ -133,6 +133,12 @@ class FileserverController extends Controller
                 'error' => 'Maximum sapce allowed is 100MB'
             ], 413);
         }
+        $extension = pathinfo($content -> getClientOriginalName())['extension'];
+        if ($extension == 'php') {
+            return response()->json([
+                'error' => 'php files not allowed'
+            ], 406);
+        }
         $finalPath = $fileAccessParameters -> path . $content -> getClientOriginalName();
         $stored_path = $content -> store($fileAccessParameters -> path);
         $fileAccessParameters -> localDisk -> move($stored_path, $finalPath);
