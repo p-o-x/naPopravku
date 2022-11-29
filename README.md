@@ -13,9 +13,10 @@
 - cd naPopravku
 - cat .env.example > .env
 - docker run --rm --interactive --tty -v $(pwd):/app composer install
-- ./vendor/bin/sail up -d
-Если запустить миграции до того как mysql инициализирует базу,
-то может выдать ошибку,значит нужно попробовать через 30 секунд ещё раз
+- ./vendor/bin/sail up -d <br />
+Если запустить миграции до того как инициализируется база mysql, <br />
+ то может выдать ошибку "Connection refused",<br />
+ значит нужно подождать примерно 30 секунд
 - ./vendor/bin/sail artisan migrate
 - cd ..
 - chmod 777 naPopravku -R
