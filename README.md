@@ -8,7 +8,7 @@
 
 коллекция postman napopravku.postman_collection.json
 
-Инструкция запуска:
+Инструкция для запуска:
 - git clone https://github.com/p-o-x/naPopravku
 - cd naPopravku
 - cat .env.example > .env
