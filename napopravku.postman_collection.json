@@ -1,0 +1,727 @@
+{
+	"info": {
+		"_postman_id": "50a04b16-fc19-4013-8f53-9b552c26c1df",
+		"name": "napopravku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16453022"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Dima\",\n    \"email\": \"test@test.ru\",\n    \"password\":\"qwe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:80/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Dima\",\n    \"email\": \"test@test.ru\",\n    \"password\":\"qwe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"User Created Successfully\",\n    \"token\": \"1|60AupNuZc4id1NrhrxT0cc647MxGk3ocHCOovDPY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "log in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@test.ru\",\n    \"password\":\"qwe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:80/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "log in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@test.ru\",\n    \"password\":\"qwe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"User Logged In Successfully\",\n    \"token\": \"3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list user files",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/test_folder",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"test_folder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list user files",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"filesystem\": {\n        \"size\": 100200976,\n        \"folders\": [\n            {\n                \"name\": \"pi\",\n                \"size\": 20971520,\n                \"files\": [\n                    {\n                        \"name\": \"bigtest.txt\",\n                        \"size\": 20971520\n                    }\n                ]\n            },\n            {\n                \"name\": \"pitest\",\n                \"size\": 15218847,\n                \"files\": [\n                    {\n                        \"name\": \"com_virtuemart.3.8.8.10472_package_or_extract.zip\",\n                        \"size\": 5938163\n                    },\n                    {\n                        \"name\": \"daygeek.txt\",\n                        \"size\": 2097152\n                    },\n                    {\n                        \"name\": \"otchetpp_2.docx\",\n                        \"size\": 6641005\n                    },\n                    {\n                        \"name\": \"ru-RU_joomla_lang_full_4.1.0v1.zip\",\n                        \"size\": 542527\n                    }\n                ]\n            },\n            {\n                \"name\": \"asdasfsdfg\",\n                \"size\": 20971520,\n                \"files\": [\n                    {\n                        \"name\": \"bigtest.txt\",\n                        \"size\": 20971520\n                    }\n                ]\n            },\n            {\n                \"name\": \"test_folder\",\n                \"size\": 21521377,\n                \"files\": [\n                    {\n                        \"name\": \"bigtest.txt\",\n                        \"size\": 20971520\n                    },\n                    {\n                        \"name\": \"ru-RU_joomla_lang_full_4.1.0v1.zip\",\n                        \"size\": 542527\n                    },\n                    {\n                        \"name\": \"test.txt\",\n                        \"size\": 3665\n                    },\n                    {\n                        \"name\": \"tetet.txt\",\n                        \"size\": 3665\n                    }\n                ]\n            }\n        ],\n        \"files\": [\n            {\n                \"name\": \"bigtest.txt\",\n                \"size\": 20971520\n            },\n            {\n                \"name\": \"ru-RU_joomla_lang_full_4.1.0v1.zip\",\n                \"size\": 542527\n            },\n            {\n                \"name\": \"test.txt\",\n                \"size\": 3665\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "list user files",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/test_folder",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								"test_folder"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"filesystem\": {\n        \"size\": 21521377,\n        \"folders\": [],\n        \"files\": [\n            {\n                \"name\": \"bigtest.txt\",\n                \"size\": 20971520\n            },\n            {\n                \"name\": \"ru-RU_joomla_lang_full_4.1.0v1.zip\",\n                \"size\": 542527\n            },\n            {\n                \"name\": \"test.txt\",\n                \"size\": 3665\n            },\n            {\n                \"name\": \"tetet.txt\",\n                \"size\": 3665\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "download file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"test_folder",
+						"test.txt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "download file",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								"test_folder",
+								"test.txt"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "test file content\n"
+				}
+			]
+		},
+		{
+			"name": "delete file or folder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/pi",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"pi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete file or folder",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								"test_folder",
+								"test.txt"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"result\": \"Deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "rename file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"new_name\": \"test_rename.txt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"test_folder",
+						"test.txt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "rename file",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"new_name\": \"test_rename.txt\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/test.txt",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								"test_folder",
+								"test.txt"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"result\": \"Changed file name\"\n}"
+				}
+			]
+		},
+		{
+			"name": "upoload file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "test_upload.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/test_folder/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"test_folder",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "upload file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "test_upload.txt"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80/api/fileserver/test_folder/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"fileserver",
+								"test_folder",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"path\": \"test_folder/test_upload.txt\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create folder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:80/api/fileserver/test_folder2/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"fileserver",
+						"test_folder2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create folder",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"new_name\": \"test_rename.txt\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80//api/generateurl/test_folder/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"",
+								"api",
+								"generateurl",
+								"test_folder",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"path\": \"test_folder2/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "generete public url",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|2ZwGRrQj772oMLHPxGyEwns21B1rokGLajcaK2Lr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:80/api/generateurl/test_folder/test.txt",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"generateurl",
+						"test_folder",
+						"test.txt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generate public url",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"new_name\": \"test_rename.txt\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:80//api/generateurl/test_folder/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "80",
+							"path": [
+								"",
+								"api",
+								"generateurl",
+								"test_folder",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"url\": \"http://0.0.0.0/api/storage/APQFVi5svSG.txt\"\n}"
+				}
+			]
+		}
+	]
+}
